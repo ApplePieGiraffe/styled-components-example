@@ -1,4 +1,23 @@
-/** Add your relevant code here for the issue to reproduce */
+'use client';
+
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background: red;
+
+  :hover {
+    background: blue;
+  }
+`;
+
 export default function Home() {
-  return null;
+  return (
+    <div>
+      <Button>Click Me</Button>
+
+      <Button>
+        <span>Click Me</span>
+      </Button>
+    </div>
+  );
 }
